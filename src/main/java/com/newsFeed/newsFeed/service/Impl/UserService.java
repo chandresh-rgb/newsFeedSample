@@ -4,6 +4,6 @@ import com.newsFeed.newsFeed.Model.User;
 
 public interface UserService {
      User getUser(String username);
-     User createUser(String username, String fullname);
+     User createUser(String username, String fullname, String emailId);
 
 }

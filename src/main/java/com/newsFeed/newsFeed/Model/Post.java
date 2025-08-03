@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.util.Date;
 
 @Entity
-@Table("post")
+@Table
 @Getter
 @Setter
 @AllArgsConstructor
@@ -26,6 +26,8 @@ public class Post {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    private Long likeCount;
 
     private Date createdAt;
 }
